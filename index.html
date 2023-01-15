@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Documentation</title>
+
 </head>
 <body>
     <header>
@@ -17,6 +19,7 @@
                 <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
                 <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
                 <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
             </ul>
         </nav>
     </header>
@@ -80,6 +83,14 @@
                 (uppercase) and the characters "a" through "z" (lowercase).</p>
             <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape 
                 sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+        </section>
+        <section id="Global_variables" class="main-section">
+            <header>Global variables</header>
+            <p>Global variables are in fact properties of the global object. In web pages the global object is window, so
+                 you can set and access global variables using the window.variable syntax.</p>
+            <p>Consequently, you can access global variables declared in one window or frame from another window or
+                 frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared 
+                 in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
         </section>
        
     </main>
